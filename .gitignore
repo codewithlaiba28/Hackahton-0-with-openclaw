@@ -1,0 +1,17 @@
+# Secrets — never commit these
+.env
+credentials.json
+token.json
+gmail_processed_ids.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs (optional — comment out if you want logs in git)
+# Logs/
+
+# OS files
+.DS_Store
+Thumbs.db
