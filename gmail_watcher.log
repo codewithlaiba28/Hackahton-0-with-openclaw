@@ -1,0 +1,139 @@
+2026-04-15 19:32:47,805 - google_auth_oauthlib.flow - INFO - "GET /?state=Qkh06fvFWVZ0XYAtHnIep1RXiCoYhH&iss=https://accounts.google.com&code=4/0Aci98E-19xw4vo07xOF0HL4fx707fAkE7ySAvB1RYde2ah66AxEuGzsDu-B2gKIrFjCJtw&scope=https://www.googleapis.com/auth/gmail.readonly HTTP/1.1" 200 65
+2026-04-15 19:32:49,976 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-15 19:32:50,012 - SimpleGmailWatcher - INFO - Initialized processed email IDs (session-based).
+2026-04-15 19:32:50,013 - SimpleGmailWatcher - INFO - Starting SimpleGmailWatcher
+2026-04-15 19:32:51,639 - SimpleGmailWatcher - INFO - Found 10 new unread emails.
+2026-04-15 19:32:52,302 - SimpleGmailWatcher - INFO - Created action file for email 19d8d1663a9d6d66: Needs_Action\EMAIL_19d8d1663a9d6d66.md
+2026-04-15 19:32:52,690 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:32:52,690 - SimpleGmailWatcher - ERROR - Failed to mark email 19d8d1663a9d6d66 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d8d1663a9d6d66/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:32:53,285 - SimpleGmailWatcher - INFO - Created action file for email 19d679ff50fce787: Needs_Action\EMAIL_19d679ff50fce787.md
+2026-04-15 19:32:53,671 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:32:53,672 - SimpleGmailWatcher - ERROR - Failed to mark email 19d679ff50fce787 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d679ff50fce787/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:32:54,291 - SimpleGmailWatcher - INFO - Created action file for email 19d679fe8d725aa1: Needs_Action\EMAIL_19d679fe8d725aa1.md
+2026-04-15 19:32:54,675 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:32:54,677 - SimpleGmailWatcher - ERROR - Failed to mark email 19d679fe8d725aa1 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d679fe8d725aa1/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:32:55,334 - SimpleGmailWatcher - INFO - Created action file for email 19ca3944275dd22f: Needs_Action\EMAIL_19ca3944275dd22f.md
+2026-04-15 19:32:55,719 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:32:55,719 - SimpleGmailWatcher - ERROR - Failed to mark email 19ca3944275dd22f as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19ca3944275dd22f/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:32:56,357 - SimpleGmailWatcher - INFO - Created action file for email 19c42156d80ae784: Needs_Action\EMAIL_19c42156d80ae784.md
+2026-04-15 19:32:56,743 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:32:56,743 - SimpleGmailWatcher - ERROR - Failed to mark email 19c42156d80ae784 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c42156d80ae784/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:32:57,382 - SimpleGmailWatcher - INFO - Created action file for email 19c4201547d3e830: Needs_Action\EMAIL_19c4201547d3e830.md
+2026-04-15 19:32:57,761 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:32:57,763 - SimpleGmailWatcher - ERROR - Failed to mark email 19c4201547d3e830 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c4201547d3e830/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:32:58,381 - SimpleGmailWatcher - INFO - Created action file for email 19c4090bd3fd91a1: Needs_Action\EMAIL_19c4090bd3fd91a1.md
+2026-04-15 19:32:58,792 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:32:58,792 - SimpleGmailWatcher - ERROR - Failed to mark email 19c4090bd3fd91a1 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c4090bd3fd91a1/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:32:59,410 - SimpleGmailWatcher - INFO - Created action file for email 19c36682dd36968f: Needs_Action\EMAIL_19c36682dd36968f.md
+2026-04-15 19:32:59,791 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:32:59,792 - SimpleGmailWatcher - ERROR - Failed to mark email 19c36682dd36968f as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c36682dd36968f/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:33:00,431 - SimpleGmailWatcher - INFO - Created action file for email 19c2ab9af331668f: Needs_Action\EMAIL_19c2ab9af331668f.md
+2026-04-15 19:33:00,814 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:33:00,815 - SimpleGmailWatcher - ERROR - Failed to mark email 19c2ab9af331668f as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c2ab9af331668f/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:33:02,069 - SimpleGmailWatcher - INFO - Created action file for email 19c1aea186cc1230: Needs_Action\EMAIL_19c1aea186cc1230.md
+2026-04-15 19:33:02,443 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:33:02,444 - SimpleGmailWatcher - ERROR - Failed to mark email 19c1aea186cc1230 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c1aea186cc1230/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:33:02,445 - SimpleGmailWatcher - INFO - Total pending email action files: 11
+2026-04-15 19:37:34,267 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-15 19:37:34,270 - SimpleGmailWatcher - INFO - Initialized processed email IDs (session-based).
+2026-04-15 19:37:34,270 - SimpleGmailWatcher - INFO - Starting SimpleGmailWatcher
+2026-04-15 19:37:35,784 - SimpleGmailWatcher - INFO - Found 10 new unread emails.
+2026-04-15 19:37:36,461 - SimpleGmailWatcher - INFO - Created action file for email 19d918f3087cf54b: Needs_Action\EMAIL_19d918f3087cf54b.md
+2026-04-15 19:37:36,838 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:37:36,838 - SimpleGmailWatcher - ERROR - Failed to mark email 19d918f3087cf54b as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d918f3087cf54b/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:37:37,482 - SimpleGmailWatcher - INFO - Created action file for email 19d8d1663a9d6d66: Needs_Action\EMAIL_19d8d1663a9d6d66.md
+2026-04-15 19:37:37,871 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:37:37,871 - SimpleGmailWatcher - ERROR - Failed to mark email 19d8d1663a9d6d66 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d8d1663a9d6d66/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:37:38,467 - SimpleGmailWatcher - INFO - Created action file for email 19d679ff50fce787: Needs_Action\EMAIL_19d679ff50fce787.md
+2026-04-15 19:37:38,838 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:37:38,839 - SimpleGmailWatcher - ERROR - Failed to mark email 19d679ff50fce787 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d679ff50fce787/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:37:39,485 - SimpleGmailWatcher - INFO - Created action file for email 19d679fe8d725aa1: Needs_Action\EMAIL_19d679fe8d725aa1.md
+2026-04-15 19:37:39,869 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:37:39,869 - SimpleGmailWatcher - ERROR - Failed to mark email 19d679fe8d725aa1 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d679fe8d725aa1/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:37:41,235 - SimpleGmailWatcher - INFO - Created action file for email 19ca3944275dd22f: Needs_Action\EMAIL_19ca3944275dd22f.md
+2026-04-15 19:37:41,613 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:37:41,613 - SimpleGmailWatcher - ERROR - Failed to mark email 19ca3944275dd22f as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19ca3944275dd22f/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:41,244 - google_auth_oauthlib.flow - INFO - "GET /?state=UtgCAneEi27j1a4hgTJBpHqe2WZ5Ky&iss=https://accounts.google.com&code=4/0Aci98E-ZObJjEepXvpt7fkrhtiaAx8JJKpebJcI3O_E-74d6ot8auVsVC2AMh50REbW-zw&scope=https://www.googleapis.com/auth/gmail.readonly HTTP/1.1" 200 65
+2026-04-15 19:56:42,322 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-15 19:56:42,326 - SimpleGmailWatcher - INFO - Initialized processed email IDs (session-based).
+2026-04-15 19:56:42,326 - SimpleGmailWatcher - INFO - Starting SimpleGmailWatcher
+2026-04-15 19:56:44,404 - SimpleGmailWatcher - INFO - Found 10 new unread emails.
+2026-04-15 19:56:45,192 - SimpleGmailWatcher - INFO - Created action file for email 19d918f3087cf54b: Needs_Action\EMAIL_19d918f3087cf54b.md
+2026-04-15 19:56:45,738 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:45,738 - SimpleGmailWatcher - ERROR - Failed to mark email 19d918f3087cf54b as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d918f3087cf54b/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:46,525 - SimpleGmailWatcher - INFO - Created action file for email 19d8d1663a9d6d66: Needs_Action\EMAIL_19d8d1663a9d6d66.md
+2026-04-15 19:56:47,066 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:47,067 - SimpleGmailWatcher - ERROR - Failed to mark email 19d8d1663a9d6d66 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d8d1663a9d6d66/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:47,833 - SimpleGmailWatcher - INFO - Created action file for email 19d679ff50fce787: Needs_Action\EMAIL_19d679ff50fce787.md
+2026-04-15 19:56:48,371 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:48,372 - SimpleGmailWatcher - ERROR - Failed to mark email 19d679ff50fce787 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d679ff50fce787/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:49,173 - SimpleGmailWatcher - INFO - Created action file for email 19d679fe8d725aa1: Needs_Action\EMAIL_19d679fe8d725aa1.md
+2026-04-15 19:56:49,718 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:49,719 - SimpleGmailWatcher - ERROR - Failed to mark email 19d679fe8d725aa1 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d679fe8d725aa1/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:50,525 - SimpleGmailWatcher - INFO - Created action file for email 19ca3944275dd22f: Needs_Action\EMAIL_19ca3944275dd22f.md
+2026-04-15 19:56:51,065 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:51,066 - SimpleGmailWatcher - ERROR - Failed to mark email 19ca3944275dd22f as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19ca3944275dd22f/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:51,894 - SimpleGmailWatcher - INFO - Created action file for email 19c42156d80ae784: Needs_Action\EMAIL_19c42156d80ae784.md
+2026-04-15 19:56:52,433 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:52,433 - SimpleGmailWatcher - ERROR - Failed to mark email 19c42156d80ae784 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c42156d80ae784/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:53,221 - SimpleGmailWatcher - INFO - Created action file for email 19c4201547d3e830: Needs_Action\EMAIL_19c4201547d3e830.md
+2026-04-15 19:56:53,754 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:53,755 - SimpleGmailWatcher - ERROR - Failed to mark email 19c4201547d3e830 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c4201547d3e830/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:54,555 - SimpleGmailWatcher - INFO - Created action file for email 19c4090bd3fd91a1: Needs_Action\EMAIL_19c4090bd3fd91a1.md
+2026-04-15 19:56:55,089 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:55,090 - SimpleGmailWatcher - ERROR - Failed to mark email 19c4090bd3fd91a1 as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c4090bd3fd91a1/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:55,941 - SimpleGmailWatcher - INFO - Created action file for email 19c36682dd36968f: Needs_Action\EMAIL_19c36682dd36968f.md
+2026-04-15 19:56:56,483 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:56,484 - SimpleGmailWatcher - ERROR - Failed to mark email 19c36682dd36968f as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c36682dd36968f/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:57,269 - SimpleGmailWatcher - INFO - Created action file for email 19c2ab9af331668f: Needs_Action\EMAIL_19c2ab9af331668f.md
+2026-04-15 19:56:57,809 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2026-04-15 19:56:57,809 - SimpleGmailWatcher - ERROR - Failed to mark email 19c2ab9af331668f as read: <HttpError 403 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19c2ab9af331668f/modify?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-04-15 19:56:57,811 - SimpleGmailWatcher - INFO - Total pending email action files: 12
+2026-04-15 19:58:36,843 - google_auth_oauthlib.flow - INFO - "GET /?state=FoLUUHwF5Kx1AqlH3TooGYgZHHbIIi&iss=https://accounts.google.com&code=4/0Aci98E9zNBTeUIKOQNero14iENO8IojtGEDSaDy1MhJWiXono3PzR_xyOq6Lw14m7KD7Rg&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2026-04-15 19:58:38,342 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-15 19:58:38,347 - SimpleGmailWatcher - INFO - Initialized processed email IDs (session-based).
+2026-04-15 19:58:38,347 - SimpleGmailWatcher - INFO - Starting SimpleGmailWatcher
+2026-04-15 19:58:40,663 - SimpleGmailWatcher - INFO - Found 10 new unread emails.
+2026-04-15 19:58:41,444 - SimpleGmailWatcher - INFO - Created action file for email 19d918f3087cf54b: Needs_Action\EMAIL_19d918f3087cf54b.md
+2026-04-15 19:58:42,406 - SimpleGmailWatcher - INFO - Marked email 19d918f3087cf54b as read.
+2026-04-15 19:58:43,179 - SimpleGmailWatcher - INFO - Created action file for email 19d8d1663a9d6d66: Needs_Action\EMAIL_19d8d1663a9d6d66.md
+2026-04-15 19:58:44,149 - SimpleGmailWatcher - INFO - Marked email 19d8d1663a9d6d66 as read.
+2026-04-15 19:58:44,929 - SimpleGmailWatcher - INFO - Created action file for email 19d679ff50fce787: Needs_Action\EMAIL_19d679ff50fce787.md
+2026-04-15 19:58:45,893 - SimpleGmailWatcher - INFO - Marked email 19d679ff50fce787 as read.
+2026-04-15 19:58:46,706 - SimpleGmailWatcher - INFO - Created action file for email 19d679fe8d725aa1: Needs_Action\EMAIL_19d679fe8d725aa1.md
+2026-04-15 19:58:47,686 - SimpleGmailWatcher - INFO - Marked email 19d679fe8d725aa1 as read.
+2026-04-15 19:58:48,489 - SimpleGmailWatcher - INFO - Created action file for email 19ca3944275dd22f: Needs_Action\EMAIL_19ca3944275dd22f.md
+2026-04-15 19:58:49,456 - SimpleGmailWatcher - INFO - Marked email 19ca3944275dd22f as read.
+2026-04-15 19:58:50,261 - SimpleGmailWatcher - INFO - Created action file for email 19c42156d80ae784: Needs_Action\EMAIL_19c42156d80ae784.md
+2026-04-15 19:58:51,220 - SimpleGmailWatcher - INFO - Marked email 19c42156d80ae784 as read.
+2026-04-15 19:58:52,049 - SimpleGmailWatcher - INFO - Created action file for email 19c4201547d3e830: Needs_Action\EMAIL_19c4201547d3e830.md
+2026-04-15 19:58:53,005 - SimpleGmailWatcher - INFO - Marked email 19c4201547d3e830 as read.
+2026-04-15 19:58:53,821 - SimpleGmailWatcher - INFO - Created action file for email 19c4090bd3fd91a1: Needs_Action\EMAIL_19c4090bd3fd91a1.md
+2026-04-15 19:58:54,775 - SimpleGmailWatcher - INFO - Marked email 19c4090bd3fd91a1 as read.
+2026-04-15 19:58:55,604 - SimpleGmailWatcher - INFO - Created action file for email 19c36682dd36968f: Needs_Action\EMAIL_19c36682dd36968f.md
+2026-04-15 19:58:56,607 - SimpleGmailWatcher - INFO - Marked email 19c36682dd36968f as read.
+2026-04-15 19:58:57,450 - SimpleGmailWatcher - INFO - Created action file for email 19c2ab9af331668f: Needs_Action\EMAIL_19c2ab9af331668f.md
+2026-04-15 19:58:58,428 - SimpleGmailWatcher - INFO - Marked email 19c2ab9af331668f as read.
+2026-04-15 19:58:58,429 - SimpleGmailWatcher - INFO - Total pending email action files: 12
+2026-04-15 20:00:59,203 - SimpleGmailWatcher - INFO - Found 7 new unread emails.
+2026-04-15 20:01:00,016 - SimpleGmailWatcher - INFO - Created action file for email 19d91a6d1cc92059: Needs_Action\EMAIL_19d91a6d1cc92059.md
+2026-04-15 20:01:01,017 - SimpleGmailWatcher - INFO - Marked email 19d91a6d1cc92059 as read.
+2026-04-15 20:01:01,830 - SimpleGmailWatcher - INFO - Created action file for email 19c1aea186cc1230: Needs_Action\EMAIL_19c1aea186cc1230.md
+2026-04-15 20:01:02,887 - SimpleGmailWatcher - INFO - Marked email 19c1aea186cc1230 as read.
+2026-04-15 20:01:03,690 - SimpleGmailWatcher - INFO - Created action file for email 19c1addce05d9744: Needs_Action\EMAIL_19c1addce05d9744.md
+2026-04-15 20:01:04,684 - SimpleGmailWatcher - INFO - Marked email 19c1addce05d9744 as read.
+2026-04-15 20:01:05,879 - SimpleGmailWatcher - INFO - Created action file for email 19bf9d549689e364: Needs_Action\EMAIL_19bf9d549689e364.md
+2026-04-15 20:01:06,893 - SimpleGmailWatcher - INFO - Marked email 19bf9d549689e364 as read.
+2026-04-15 20:01:07,899 - SimpleGmailWatcher - INFO - Created action file for email 19bd026ef564e6a5: Needs_Action\EMAIL_19bd026ef564e6a5.md
+2026-04-15 20:01:08,906 - SimpleGmailWatcher - INFO - Marked email 19bd026ef564e6a5 as read.
+2026-04-15 20:01:09,732 - SimpleGmailWatcher - INFO - Created action file for email 19bd026783030e82: Needs_Action\EMAIL_19bd026783030e82.md
+2026-04-15 20:01:10,758 - SimpleGmailWatcher - INFO - Marked email 19bd026783030e82 as read.
+2026-04-15 20:01:11,549 - SimpleGmailWatcher - INFO - Created action file for email 19bd02539f545bd3: Needs_Action\EMAIL_19bd02539f545bd3.md
+2026-04-15 20:01:12,523 - SimpleGmailWatcher - INFO - Marked email 19bd02539f545bd3 as read.
+2026-04-15 20:01:12,524 - SimpleGmailWatcher - INFO - Total pending email action files: 17
+2026-04-15 20:03:13,371 - SimpleGmailWatcher - INFO - No new unread emails found.
+2026-04-15 20:03:13,373 - SimpleGmailWatcher - INFO - Total pending email action files: 17
+2026-04-15 20:05:14,134 - SimpleGmailWatcher - INFO - No new unread emails found.
+2026-04-15 20:05:14,135 - SimpleGmailWatcher - INFO - Total pending email action files: 17
+2026-04-15 20:07:14,893 - SimpleGmailWatcher - INFO - No new unread emails found.
+2026-04-15 20:07:14,895 - SimpleGmailWatcher - INFO - Total pending email action files: 17
