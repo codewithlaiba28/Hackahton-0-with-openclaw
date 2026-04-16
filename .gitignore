@@ -19,13 +19,18 @@ __pycache__/
 
 # Ignore vault data (keep structure, ignore individual content)
 AI_Employee_Vault/Inbox/*
+AI_Employee_Vault/Approved/*
 AI_Employee_Vault/Done/*
 AI_Employee_Vault/Logs/*
+AI_Employee_Vault/Pending_Approval/*
+AI_Employee_Vault/Rejected/*
 Needs_Action/*.md
 Plans/*.md
 Done/*
 Inbox/*
 Logs/*
+Approved/*
+Rejected/*
 
 # Ignore IDE specific files
 .vscode/
