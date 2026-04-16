@@ -13,16 +13,15 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
-# --- Configuration ---
-# Explicitly define base path to the workspace using forward slashes for consistency
-WORKSPACE_BASE_PATH = Path("C:/Code-journy/Quator-4/Hackahton-0-with-openclaw") # Using forward slashes and drive letter
+# Define base path to the workspace
+WORKSPACE_BASE_PATH = Path(os.getcwd())
 
 # CREDENTIALS_PATH and TOKEN_PATH are now explicitly defined using the workspace path
 CREDENTIALS_PATH = WORKSPACE_BASE_PATH / "credentials.json"
 TOKEN_PATH = WORKSPACE_BASE_PATH / "token.json"
 LOG_DIR = WORKSPACE_BASE_PATH / "Logs"
 NEEDS_ACTION_DIR = WORKSPACE_BASE_PATH / "Needs_Action"
-PROCESSED_EMAILS_LOG = LOG_DIR / "processed_emails.log" # Simple log for processed IDs
+PROCESSED_EMAILS_LOG = LOG_DIR / "processed_emails.log" 
 
 # --- Ensure directories exist ---
 NEEDS_ACTION_DIR.mkdir(parents=True, exist_ok=True)
@@ -33,40 +32,11 @@ if not PROCESSED_EMAILS_LOG.exists():
     PROCESSED_EMAILS_LOG.touch()
 
 
-# Assuming base_watcher.py is in the same directory or accessible via PYTHONPATH
-# If base_watcher.py is not in the same directory, this import might fail.
-# For the purpose of this script, we are including the BaseWatcher class definition directly
-# or assuming it's available in the same folder.
-# If base_watcher.py is in the same folder, it should be importable.
-# If not, we might need to adjust it or find base_watcher.py.
-# For now, let's assume base_watcher.py is there or define it here if it's not found.
-
-# Minimal BaseWatcher definition if not found by import
-class BaseWatcher:
-    def __init__(self, vault_path: str, check_interval: int = 60):
-        self.vault_path = Path(vault_path)
-        self.needs_action = self.vault_path / 'Needs_Action'
-        self.check_interval = check_interval
-        self.logger = logging.getLogger(self.__class__.__name__)
-        self.logger.setLevel(logging.INFO)
-        self.needs_action.mkdir(parents=True, exist_ok=True)
-        # Define log file path using the WORKSPACE_BASE_PATH
-        self.log_file = WORKSPACE_BASE_PATH / 'Logs' / f'{self.__class__.__name__.lower()}_log.txt'
-        self.log_file.parent.mkdir(parents=True, exist_ok=True)
-        # Avoid adding multiple handlers if BaseWatcher is instantiated multiple times
-        if not self.logger.handlers:
-            self.file_handler = logging.FileHandler(self.log_file)
-            self.file_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
-            self.logger.addHandler(self.file_handler)
-
-    def run(self):
-        self.logger.info("Dummy BaseWatcher run method called.")
-    check_for_updates = lambda self: []
-    create_action_file = lambda self, item: Path()
+from base_watcher import BaseWatcher
 
 # --- Google API Authentication ---
 # If modifying these scopes, delete the file token.json. (Added by AI)
-SCOPES = ['https://www.googleapis.com/auth/gmail.readonly', 'https://www.googleapis.com/auth/gmail.modify']
+SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
 
 
 # --- Load processed email IDs ---
@@ -95,8 +65,9 @@ class GmailWatcher(BaseWatcher):
 
     def authenticate_gmail(self):
         if self.token_file_path.exists():
-            with open(self.token_file_path, 'rb') as token:
-                self.creds = pickle.load(token)
+            import json
+            from google.oauth2.credentials import Credentials
+            self.creds = Credentials.from_authorized_user_file(str(self.token_file_path), SCOPES)
 
         if not self.creds or not self.creds.valid:
             if self.creds and self.creds.expired and self.creds.refresh_token:
@@ -125,8 +96,8 @@ class GmailWatcher(BaseWatcher):
                     raise
 
             # Save the credentials for the next run to the explicit token path
-            with open(self.token_file_path, 'wb') as token:
-                pickle.dump(self.creds, token)
+            with open(self.token_file_path, 'w') as token:
+                token.write(self.creds.to_json())
                 self.logger.info(f"Token saved to {self.token_file_path}")
 
         try:

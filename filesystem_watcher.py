@@ -7,27 +7,7 @@ from watchdog.events import FileSystemEventHandler
 import shutil
 import os
 
-# Assuming base_watcher.py is in the same directory or accessible via PYTHONPATH
-try:
-    from base_watcher import BaseWatcher
-except ImportError:
-    # If running directly in the workspace without base_watcher in PYTHONPATH
-    # we might need to adjust the import path or provide a fallback.
-    # For this setup, assuming it's accessible.
-    logging.error("Could not import BaseWatcher. Please ensure base_watcher.py is accessible.")
-    # Fallback to a dummy class to allow file creation for now
-    class BaseWatcher:
-        def __init__(self, vault_path: str, check_interval: int = 60):
-            self.vault_path = Path(vault_path)
-            self.needs_action = self.vault_path / 'Needs_Action'
-            self.check_interval = check_interval
-            self.logger = logging.getLogger(self.__class__.__name__)
-            self.logger.setLevel(logging.INFO)
-            self.needs_action.mkdir(parents=True, exist_ok=True)
-        def run(self):
-            self.logger.info("Dummy BaseWatcher run method called.")
-        check_for_updates = lambda self: []
-        create_action_file = lambda self, item: Path()
+from base_watcher import BaseWatcher
 
 
 class FileDropHandler(FileSystemEventHandler):
@@ -114,7 +94,7 @@ if __name__ == '__main__':
     
     # Define paths relative to the script's assumed location in the workspace
     # In this case, the script is placed in the workspace root.
-    workspace_root = Path("/mnt/c/Code-journy/Quator-4/Hackahton-0-with-openclaw")
+    workspace_root = Path(os.getcwd())
     
     # Create a dummy directory to watch for new files
     dummy_watch_dir = workspace_root / "Uploads"
