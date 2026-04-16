@@ -1,15 +1,31 @@
 # Ignore dotenv files
 .env
 
-# Ignore Claude Code session data
+# Ignore sensitive credentials and tokens
+token.json
+credentials.json
+
+# Ignore Claude Code session data and automation artifacts
 whatsapp_session/
 linkedin_session/
+*.png
+whatsapp_html_dump.txt
 
 # Ignore Python cache
 __pycache__/
 
 # Ignore logs
 *.log
+
+# Ignore vault data (keep structure, ignore individual content)
+AI_Employee_Vault/Inbox/*
+AI_Employee_Vault/Done/*
+AI_Employee_Vault/Logs/*
+Needs_Action/*.md
+Plans/*.md
+Done/*
+Inbox/*
+Logs/*
 
 # Ignore IDE specific files
 .vscode/
