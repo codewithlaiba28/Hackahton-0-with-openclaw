@@ -16,6 +16,18 @@ def login(platform: str):
         session_path = os.getenv('WHATSAPP_SESSION_PATH', './whatsapp_session')
         target_url = "https://web.whatsapp.com"
         print(f"Opening WhatsApp Web. Please scan the QR code. Session will be saved to: {session_path}")
+    elif platform == "twitter":
+        session_path = os.getenv('TWITTER_SESSION_PATH', './twitter_session')
+        target_url = "https://x.com/login"
+        print(f"Opening Twitter (X) for login. Session will be saved to: {session_path}")
+    elif platform == "facebook":
+        session_path = os.getenv('FACEBOOK_SESSION_PATH', './facebook_session')
+        target_url = "https://www.facebook.com/login"
+        print(f"Opening Facebook for login. Session will be saved to: {session_path}")
+    elif platform == "instagram":
+        session_path = os.getenv('INSTAGRAM_SESSION_PATH', './instagram_session')
+        target_url = "https://www.instagram.com/accounts/login/"
+        print(f"Opening Instagram for login. Session will be saved to: {session_path}")
     else:
         print(f"Unsupported platform: {platform}")
         return
@@ -25,9 +37,16 @@ def login(platform: str):
 
     with sync_playwright() as p:
         # Launching in HEADFUL mode (headless=False) so the user can interact
+        # Adding stealth arguments to bypass Google automation detection
         browser = p.chromium.launch_persistent_context(
             session_path,
-            headless=False
+            headless=False,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-setuid-sandbox",
+            ],
+            ignore_default_args=["--enable-automation"]
         )
         page = browser.pages[0] if browser.pages else browser.new_page()
         page.goto(target_url)
@@ -45,7 +64,7 @@ def login(platform: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="AI Employee Login Manager")
-    parser.add_argument("--platform", choices=["linkedin", "whatsapp"], required=True, help="Platform to log in to")
+    parser.add_argument("--platform", choices=["linkedin", "whatsapp", "twitter", "facebook", "instagram"], required=True, help="Platform to log in to")
     args = parser.parse_args()
     
     # Load .env variables if available (primitive loader)
