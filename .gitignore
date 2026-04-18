@@ -8,6 +8,9 @@ credentials.json
 # Ignore Claude Code session data and automation artifacts
 whatsapp_session/
 linkedin_session/
+twitter_session/
+facebook_session/
+instagram_session/
 *.png
 whatsapp_html_dump.txt
 
